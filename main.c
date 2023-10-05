@@ -5,15 +5,17 @@
 
 int main(int argc, char *argv[]) {
 	
-	int input;
+	char c;
+	int num = 0;
 	
-	printf("input a number:");
-	scanf("%d", &input);
+	printf("input a string: ");
+	while ( (c = getchar() ) != '\n' )
+	{
+		if ( c >= '0' && c <= '9')
+		num = num + 1;
+	};
 	
-	if (input < 0)
-		printf("Absolute value is %d", -input);
-	else
-		printf("Absolute valus is %d", input);
-	
+	printf("the number of digits is %i\n", num);
+		
 	return 0;
 }
