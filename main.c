@@ -10,12 +10,10 @@ int main(int argc, char *argv[]) {
 	printf("input a number:");
 	scanf("%d", &input);
 	
-	if (input > 0)
-		printf("positive\n");
-	else if (input < 0)
-		printf("negative\n");
+	if (input < 0)
+		printf("Absolute value is %d", -input);
 	else
-		printf("zero\n");
+		printf("Absolute valus is %d", input);
 	
 	return 0;
 }
